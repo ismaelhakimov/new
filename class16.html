@@ -1,0 +1,190 @@
+<!-- git bash ga girib desktop mi tanla -->
+
+<!-- mkdir todos1 -->
+
+<!-- cd todos1 -->
+
+<!-- touch index.html app.js style.css  -->
+
+<!-- code . -->
+
+<!-- github ga girib new repository create ataman -->
+
+<!-- git init -->
+
+<!-- git add . -->
+
+<!-- git commit -m "My Web App" -->
+
+<!-- git branch -M main -->
+
+<!-- git remote add origin https://github.com/qasmanavt/mywebsite.git -->
+
+<!-- ({[(
+    
+    $ git add .
+    git commit -m "Add existing file"
+    $ git push origin your-branch
+
+)]}) -->
+<!-- html document yaratib css link ataman -->
+
+<!-- title Todo List -->
+
+<!-- <script src="script.js" type="text/javascript"></script> -->
+
+<!-- h1 da Todos dab yozaman -->
+
+<!-- form id="form" qoyaman <input type="text" class="input" id="input" 
+    placeholder="Enter your todo" autocomplete="off">
+-->
+
+<!-- ul class="todos" id="todos" -->
+<!--
+    li da 
+    1 My First Todo
+    2 My Second Todo
+-->
+
+<!-- css da 
+    *{
+        box-sizing: border-box;
+        margin 0;
+        padding 0;
+    }
+
+    body{
+        background-color: #f5f5f5;
+        color: #444;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    h1 {
+        color: rgb(179, 131, 226);
+        font-size: 10rem;
+        text-align: center;
+        opacity: 0.4;
+    }
+
+    form {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
+        width: 400px;
+    }
+    .input {
+        border: none;
+        color: #444;
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        display: block;
+        width: 100%;
+    }
+
+    .input::placeholder {
+        color: #d5d5d5;
+    }
+    .todos {
+        background-color: #fff;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .todos li {
+        border-top: 1px solid #e5e5e5;
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+    }
+
+
+-->
+
+<!-- ikkinchi li ga class="completed" qoshaman -->
+
+<!-- 
+    css da
+    .todos li.completed {
+        color: #b6b6b6;
+        text-decoration: line-through;
+    }
+ -->
+
+<!-- html da form nan keyin <small>Left click to toggle completed. 
+    <br>Right click to delete todo </small> 
+-->
+<!-- 
+    small {
+        color: #b5b5b5;
+        margin-top: 3rem;
+        text-align: center;
+    } 
+-->
+
+
+<!-- js bn ishlimiz demak birinchi bolib const create ataman -->
+
+<!-- 
+        const form = document.getElementById('form');
+        const input = document.getElementById('input');
+        const todosUL = document.getElementById('todos');
+ -->
+
+<!-- 
+    form.addEventListener('submit', (e) => {
+    e.preventDefault(); // difaultlatini yoqatadi
+
+
+})
+-->
+
+<!--  addTodo(); ni qoshaman -->
+
+
+<!-- addTodo function create ataman -->
+
+<!-- function addTodo(todo) {
+    let todoText = input.value;
+
+
+
+    console.log(todoText)// keyin ochirib tashiman
+}
+-->
+
+<!-- 
+    if (todoText) {
+        const todoEl = document.createElement('li')
+        if (todo && todo.completed) {
+            todoEl.classList.add('completed');
+        }
+        --
+    }
+-->
+
+<!-- todoEl.innerText = todoText; ni qoshaman-->
+
+<!-- and todosUL.appendChild(todoEl); 
+    input.value = '';
+    buni ham qoshaman 
+-->
+
+<!-- 
+    todoEl.addEventListener('click', () => {
+    todoEl.classList.toggle('completed')
+}); 
+-->
+
+<!-- 
+todoEl.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+
+            todoEl.remove();
+        })
+-->
+
